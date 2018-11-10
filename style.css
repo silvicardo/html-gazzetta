@@ -98,6 +98,7 @@ nav .fas:not(.caret-down) {
 }
 
 .latest_videos .videos_cnt {
+  position: relative;
   float: left;
   width:20%;
   height:auto;
@@ -110,11 +111,31 @@ nav .fas:not(.caret-down) {
   }
 
 }
+
 .videos_cnt img {
   padding: 10px;
   margin: 0 auto;
   max-width: 100%;
 }
+
+.videos_cnt .video_cnt_layer {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width: 991px) {
 
