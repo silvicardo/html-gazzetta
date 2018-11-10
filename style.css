@@ -13,6 +13,7 @@ a, li , i {
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
@@ -26,7 +27,7 @@ section {
 .main_cnt {
   width:100%;
   height:2000px;
-  background:yellow;
+  background-color: rgb(254,232,234)
 }
 
 /* HEADER */
@@ -166,20 +167,31 @@ font-size: 2.5em;
   background:pink
 }
 
+.hero_body .categories * {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
 .hero_body .categories {
   height: 100%;
-  color: black;
   background: white;
 }
 
 .hero_body .categories>h4 {
+  font-size: 1.5rem;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
+.hero_body .categories>h4>i {
+  font-size: 1em;
+  margin-right: 6px;
+}
+
 .hero_body .categories ul li {
-  color: black;
-  font-size: 0.8em;
+  margin-bottom: 8px;
+  font-size: 0.7em;
 }
 
 .hero_body img {
@@ -199,6 +211,7 @@ font-size: 2.5em;
 }
 
 .hero_body .top_article .top_links i {
+  color:orange;
   margin: 0 10px;
 }
 
@@ -210,6 +223,7 @@ font-size: 2.5em;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.3rem;
+  color:orange;
 }
 
 .hero_body .articles_left .secondary_articles .secondary_article a h3 {
@@ -234,6 +248,9 @@ font-size: 2.5em;
   border-bottom: 1px solid black;
 }
 
+.hero_body .articles .secondary_links p span{
+  font-size: 0.7em;
+}
 
 .hero_body .articles .secondary_links a {
   display: block;
