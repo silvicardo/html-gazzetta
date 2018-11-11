@@ -37,7 +37,8 @@ section {
   background-color: rgb(254,232,234)
 }
 
-/* HEADER */
+/* HEADER-->NavBar */
+
 header {
   height: 80px;
   width: 100%;
@@ -93,6 +94,7 @@ nav .fas:not(.caret-down) {
 /* HERO SECTION */
 
 /* HERO SECTION - General Rules */
+
 .hero_header, .hero_body {
   max-width: 90%;
   margin: 0 auto;
@@ -112,6 +114,7 @@ nav .fas:not(.caret-down) {
 }
 
 /* HERO SECTION-->Hero Header */
+
 .hero_section .hero_header.latest_videos {
   margin-bottom: 50px;
   position:relative;
@@ -182,6 +185,8 @@ nav .fas:not(.caret-down) {
 
 /* HERO SECTION-->Hero Body */
 
+/* HERO SECTION-->Hero Body-->Categories */
+
 .hero_body .categories * {
   text-transform: uppercase;
   font-weight: bold;
@@ -228,16 +233,22 @@ nav .fas:not(.caret-down) {
   background: red;
 }
 
-.hero_body img {
-  width: 100%;
+/* HERO SECTION-->Hero Body-->articles_and_spots  */
+
+.hero_body .articles_and_spots .articles {
+  padding-bottom: 20px;
 }
 
 @media all and (min-width: 991px) {
 
-    .hero_body .articles{
+    .hero_body .articles_and_spots{
       border-left: 1px solid black;
     }
 
+}
+
+.hero_body .articles_and_spots img {
+  width: 100%;
 }
 
 .hero_body .top_article {
@@ -273,7 +284,7 @@ nav .fas:not(.caret-down) {
 
 .hero_body .secondary_article a h3 {
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .hero_body .secondary_article a p {
@@ -281,16 +292,16 @@ nav .fas:not(.caret-down) {
   color: black;
 }
 
-.hero_body .articles .secondary_links * {
+.hero_body .articles_and_spots .secondary_links * {
   color: black;
 }
 
-.hero_body .articles .secondary_links i {
+.hero_body .articles_and_spots .secondary_links i {
   color: orange;
   margin-right: 5px;
 }
 
-.hero_body .articles .secondary_links p {
+.hero_body .articles_and_spots .secondary_links p {
   padding-bottom: 5px;
   color: orange;
   text-transform: uppercase;
@@ -298,11 +309,11 @@ nav .fas:not(.caret-down) {
   border-bottom: 1px solid black;
 }
 
-.hero_body .articles .secondary_links p span{
+.hero_body .articles_and_spots .secondary_links p span{
   font-size: 0.7em;
 }
 
-.hero_body .articles .secondary_links a {
+.hero_body .articles_and_spots .secondary_links a {
   display: block;
   font-weight: bold;
   font-size: 0.8em;
@@ -356,11 +367,12 @@ nav .fas:not(.caret-down) {
   font-size: 2rem;
 }
 
-.hero_body .articles .bottom_topSpot_area {
-  padding:20px;
+.hero_body .articles_and_spots .bottom_topSpot_area {
+  padding: 20px;
+  border-top: 1px solid lightgrey;
 }
 
-.hero_body .articles .bottom_topSpot_area {
+.hero_body .articles_and_spots .bottom_topSpot_area a img{
   max-width: 95%;
   margin: 0 auto;
 }
