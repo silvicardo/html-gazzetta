@@ -1,3 +1,7 @@
+/* GAZZETTA.IT - style.css */
+
+/* GENERAL RULES */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,11 @@
   color: white;
 }
 
-
+@media all and (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+}
 
 a, li , i {
   cursor: pointer;
@@ -26,7 +34,6 @@ section {
 
 .main_cnt {
   width:100%;
-  /* height:2000px; */
   background-color: rgb(254,232,234)
 }
 
@@ -60,8 +67,12 @@ nav * {
   margin: 0px 10px;
 }
 
+nav .navBar_left img {
+  max-width: 1.5em;
+}
+
 nav .fas:not(.caret-down) {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .button {
@@ -81,21 +92,28 @@ nav .fas:not(.caret-down) {
 
 /* HERO SECTION */
 
+/* HERO SECTION - General Rules */
 .hero_header, .hero_body {
   max-width: 90%;
   margin: 0 auto;
 }
 
+@media all and (max-width: 500px) {
+
+  .hero_header, .hero_body {
+    max-width: 80%;
+  }
+
+}
 
 .hero_section {
   margin-top: 80px;
   padding-top: 40px;
 }
 
-.hero_section .hero_header {
+/* HERO SECTION-->Hero Header */
+.hero_section .hero_header.latest_videos {
   margin-bottom: 50px;
-}
-.hero_section .latest_videos {
   position:relative;
   width: 100%;
   display: flex;
@@ -150,22 +168,19 @@ nav .fas:not(.caret-down) {
 }
 
 .video_cnt_layer .video_layer_content .video_layer_body i {
-font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .video_cnt:hover .video_cnt_layer{
  transform: scale(1.5);
  z-index: 999;
 }
+
 .video_cnt:hover .video_cnt_layer .video_layer_content {
   padding:20px;
 }
 
-/* HERO BODY */
-
-.hero_section .hero_body {
-  background:pink
-}
+/* HERO SECTION-->Hero Body */
 
 .hero_body .categories * {
   text-transform: uppercase;
@@ -177,12 +192,12 @@ font-size: 2.5em;
   padding: 0;
   height: 100%;
   border-top: 3px solid black;
-  border-right: 1px solid black;
 }
 
 .hero_body .categories .categories_header, .hero_body .categories .categories_body  {
   padding: 10px 15px;
 }
+
 .hero_body .categories .categories_header {
   border-bottom: 1px solid black;
 }
@@ -196,46 +211,74 @@ font-size: 2.5em;
   margin-right: 6px;
 }
 
-.hero_body .categories ul li {
+.hero_body ul li {
   margin-bottom: 8px;
+}
+
+.hero_body .categories ul li a {
   font-size: 0.7em;
+}
+
+.hero_body .categories ul li a span.live_badge {
+  padding: 3px 5px;
+  float: right;
+  font-size: 0.9em;
+  border-radius: 3px;
+  color:white;
+  background: red;
 }
 
 .hero_body img {
   width: 100%;
 }
 
-.hero_body .articles, .hero_body {
-  /* background: green; */
+@media all and (min-width: 991px) {
+
+    .hero_body .articles{
+      border-left: 1px solid black;
+    }
+
 }
 
 .hero_body .top_article {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
 .hero_body .top_article .top_links {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px 15px;
   border-top: 1px solid white;
 }
 
-.hero_body .top_article .top_links i {
-  color:orange;
-  margin: 0 10px;
+.hero_body .top_article .top_links a {
+  margin-right: 15px;
 }
 
-.hero_body .articles_left .secondary_articles .secondary_article {
+.hero_body .top_article .top_links i {
+  color:orange;
+  margin-right: 15px;
+}
+
+.hero_body .secondary_article {
   margin-bottom: 20px;
 }
 
-.hero_body .articles_left .secondary_articles .secondary_article h4 {
+.hero_body .secondary_article h4 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.3rem;
   color:orange;
 }
 
-.hero_body .articles_left .secondary_articles .secondary_article a h3 {
+.hero_body .secondary_article a h3 {
   color: black;
   font-size: 1.7rem;
+}
+
+.hero_body .secondary_article a p {
+  font-size: 0.6rem;
+  color: black;
 }
 
 .hero_body .articles .secondary_links * {
@@ -261,9 +304,57 @@ font-size: 2.5em;
 
 .hero_body .articles .secondary_links a {
   display: block;
+  font-weight: bold;
   font-size: 0.8em;
 }
 
+.hero_body .articles_right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media all and (max-width: 767px) {
+
+  .hero_body .articles_right{
+
+    flex-direction: column-reverse;
+  }
+
+}
+
+.hero_body .articles_right .side_links_column {
+  margin: 10px 0px 20px 0px;
+}
+
+.hero_body .articles_right .side_spot {
+  padding: 20px;
+  background: pink;
+}
+
+.hero_body .side_article.secondary_article h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color:orange;
+}
+
+.hero_body .side_links_column.secondary_links a {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+.hero_body .side_article.secondary_article a h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+.hero_body .side_article.secondary_article a p {
+  color: black;
+  font-size: 2rem;
+}
 
 .hero_body .articles .bottom_topSpot_area {
   padding:20px;
@@ -273,6 +364,8 @@ font-size: 2.5em;
   max-width: 95%;
   margin: 0 auto;
 }
+
+/* RESPONSIVE CLASSES MEDIA QUERIES */
 
 @media all and (max-width: 991px) {
 
