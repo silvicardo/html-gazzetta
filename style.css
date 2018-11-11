@@ -369,12 +369,14 @@ nav .fas:not(.caret-down) {
 
 .hero_body .articles_and_spots .bottom_topSpot_area {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid lightgrey;
 }
 
 .hero_body .articles_and_spots .bottom_topSpot_area a img{
   max-width: 95%;
-  margin: 0 auto;
 }
 
 /* RESPONSIVE CLASSES MEDIA QUERIES */
