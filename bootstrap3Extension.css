@@ -106,24 +106,24 @@ li {
 
 /* Combinations .flex_cnt.(mainAxis)_(crossAxis) */
 
-.flex_cnt.center_center {
-  justify-content: center;
+.flex_cnt.start_center {
+  justify-content: flex-start;
   align-items: center;
 }
-.flex_cnt.center_start {
-  justify-content: center;
+.flex_cnt.start_start {
+  justify-content: flex-start;
   align-items: flex-start;
 }
-.flex_cnt.center_end {
-  justify-content: center;
+.flex_cnt.start_end {
+  justify-content: flex-start;
   align-items: flex-end;
 }
-.flex_cnt.center_stretch {
-  justify-content: center;
+.flex_cnt.start_stretch {
+  justify-content: flex-start;
   align-items: stretch;
 }
-.flex_cnt.center_baseline {
-  justify-content: center;
+.flex_cnt.start_baseline {
+  justify-content: flex-start;
   align-items: baseline;
 }
 
@@ -145,6 +145,69 @@ li {
 }
 .flex_cnt.end_baseline {
   justify-content: flex-end;
+  align-items: baseline;
+}
+
+.flex_cnt.center_center {
+  justify-content: center;
+  align-items: center;
+}
+.flex_cnt.center_start {
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex_cnt.center_end {
+  justify-content: center;
+  align-items: flex-end;
+}
+.flex_cnt.center_stretch {
+  justify-content: center;
+  align-items: stretch;
+}
+.flex_cnt.center_baseline {
+  justify-content: center;
+  align-items: baseline;
+}
+
+.flex_cnt.spaceBetween_center {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_cnt.spaceBetween_start {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex_cnt.spaceBetween_end {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.flex_cnt.spaceBetween_stretch {
+  justify-content: space-between;
+  align-items: stretch;
+}
+.flex_cnt.spaceBetween_baseline {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flex_cnt.spaceAround_center {
+  justify-content: space-around;
+  align-items: center;
+}
+.flex_cnt.spaceAround_start {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.flex_cnt.spaceAround_end {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.flex_cnt.spaceAround_stretch {
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex_cnt.spaceAround_baseline {
+  justify-content: space-around;
   align-items: baseline;
 }
 
@@ -778,10 +841,17 @@ This allows the default alignment
   bottom:0;
   right: 0;
 }
+.overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
 
 /* DISPLAY */
 
-/* Use .flex_row for display: flex */
+/* Use .flex_cnt for display: flex */
 .display_block {
   display: block;
 }
@@ -923,6 +993,9 @@ This allows the default alignment
 .bg_lightCoral {
   background: lightcoral;
 }
+.bg_orange {
+  background: orange;
+}
 
 /* TEXT */
 
@@ -940,6 +1013,28 @@ This allows the default alignment
 }
 .blue_text {
   color: blue;
+}
+.orange_text {
+  color: orange;
+}
+
+.black_text_onHover:hover {
+  color: black;
+}
+.white_text_onHover:hover {
+  color: white;
+}
+.red_text_onHover:hover {
+  color: red;
+}
+.yellow_text_onHover:hover {
+  color:yellow;
+}
+.blue_text_onHover:hover {
+  color: blue;
+}
+.orange_text_onHover:hover {
+  color:orange
 }
 
 .fontSize_10 {
